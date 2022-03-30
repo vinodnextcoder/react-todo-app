@@ -1,8 +1,5 @@
 import React from "react"
 
-const handleChange = () => {
-  console.log("clicked");
-};
 class TodosList extends React.Component {
   render() {
     return (

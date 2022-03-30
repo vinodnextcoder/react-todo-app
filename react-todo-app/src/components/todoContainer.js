@@ -1,8 +1,8 @@
 import React from "react"
 import Header from "./header"
 import TodosList from "./TodosList"
-
-
+const handleChange = id => {
+  this.setState({    todos: this.state.todos.map(todo => {      if (todo.id === id) {        todo.completed = !todo.completed;      }      return todo;    })  });};
 const state = {
   todos: [
     {
@@ -32,7 +32,7 @@ class TodoContainer extends React.Component {
   render() {
     return (
       <div>
-      <Header />      <TodosList todos={state.todos} />
+      <Header />     <TodosList todos={state.todos} handleChangeProps={handleChange} />
     </div>
     )
   }
