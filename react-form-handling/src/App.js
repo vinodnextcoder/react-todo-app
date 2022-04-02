@@ -75,6 +75,7 @@ function App() {
             <option value="maserati">Maserati</option>
             <option value="infinity">Infinity</option>
             <option value="audi">Audi</option>
+            <option value="Bullet">Bullet</option>
           </select>
         </label>
         <br />
