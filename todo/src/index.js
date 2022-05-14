@@ -16,7 +16,13 @@ class Todo extends React.Component {
     render() {
         return (
             <div>
-                <h1 class="hdd">TODO</h1>
+                <div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+                <h1 class="hdd">TODO LIST</h1>
 
                 <br />
                 <TodoList items= { this.state.items}/>
